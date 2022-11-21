@@ -79,7 +79,7 @@ def main():
         pTime = cTime
         cv2.imshow("Image", img)
         cv2.waitKey(1)
-
+    cap.release()
 
 if __name__ == "__main__":
     main()
