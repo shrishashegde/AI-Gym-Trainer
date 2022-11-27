@@ -13,7 +13,7 @@ class excerciseType(BodyPartAngle):
         avg_arm_angle = (left_arm_angle + right_arm_angle) // 2
 
         if status:
-            if avg_arm_angle < 70:
+            if avg_arm_angle < 110:
                 counter += 1
                 status = False
         else:
@@ -46,7 +46,7 @@ class excerciseType(BodyPartAngle):
         avg_leg_angle = (left_leg_angle + right_leg_angle) // 2
 
         if status:
-            if avg_leg_angle < 70:
+            if avg_leg_angle < 100:
                 counter += 1
                 status = False
         else:

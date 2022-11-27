@@ -16,7 +16,11 @@ ap.add_argument("-vs",
                 type=str,
                 help='Type of activity to do',
                 required=False)
-args = vars(ap.parse_args())
+ap.add_argument("-vo",
+                "--video_output",
+                type=str,
+                help='Type of activity to do',
+                required=False)
 
 args = vars(ap.parse_args())
 
@@ -36,9 +40,16 @@ with mp_pose.Pose(min_detection_confidence=0.5,
                   min_tracking_confidence=0.5) as pose:
     counter = 0  # movement of exercise
     status = True  # state of move
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    out = cv2.VideoWriter(args["video_output"], fourcc, fps, (800, 480))
     while cap.isOpened():
         ret, frame = cap.read()
         # result_screen = np.zeros((250, 400, 3), np.uint8)
+        if not np.any(frame):
+            break
+        else:
+            frame = cv2.resize(frame, (800, 480), interpolation=cv2.INTER_AREA)
 
         frame = cv2.resize(frame, (800, 480), interpolation=cv2.INTER_AREA)
         # recolor frame to RGB
@@ -71,10 +82,15 @@ with mp_pose.Pose(min_detection_confidence=0.5,
                                    thickness=2,
                                    circle_radius=2),
         )
-
+        out.write(frame)
         cv2.imshow('Video', frame)
+
+        if not ret:
+            break
+
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
 
     cap.release()
+    out.release()
     cv2.destroyAllWindows()
