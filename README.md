@@ -102,8 +102,8 @@ The implementation of the solution in a group environment helped us to contribut
 
 ## Work Contributions
 | Team member                 | Responsibility           | Contributions  |
-| --------------------------- |:------------------------:| --------------:|
-| Shrisha Shridhar Hegde      |  |  |
+| --------------------------- |:------------------------:| :--------------|
+| Shrisha Shridhar Hegde      | Dataset gathering, Critical angle extraction, mediapipe pose extraction, wrapper for extracting angles, code improvement by using OOPS, report and presentation | 1) Coding of pose, effective rep count, wrapper for extracting angles. About 30% of the entire project <br /> 2) Testing <br /> 3) PPT <br /> 4) Coordinator|
 | Suruchi Sharma              |  |  |
 | Ankur                       |  |  |
 | Kishore Kumaar              |  |  |
