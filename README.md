@@ -70,7 +70,8 @@ There have been many challenges while formulating, developing and implementing t
 Methodology:
 There are two different use cases of your AI-trainer.
 1. User can use the solution to help count the number of effective repetition of a given exercise.
-The solution use mediapipe for the annotations of the important thirty one points on the user's body before feeding it to the repnet for the effective repetition calculations.
+The solution use mediapipe for the annotations of the important thirty three points on the user's body. Then critical angles are utilized to compute the effective repetitions and repnet is utilized to compute total number of repetitions. 
+Another solution is to utilize yolov7 for annotations of the important seventeen point's on user's body and then rest of the procedure is same as above.
 
 2. User can use reference video of an expert, to calculate the degree of similarity between the two.
 Utilizing the two video's frame and features to extract temporal match kernel features of same size, we can calculate similarity scores between the two feature maps of the video to find the best frame alignment and video similarity score.
