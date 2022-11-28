@@ -59,7 +59,35 @@ python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_v
          
 
 ## Abstract
-place holder
+Objective:
+The objective of this project is to assist people in measuring the quality of their exercises and aid in their health journey. We provide the effective number of repetitions and the quality of the exercises based on trainers ground truth videos.
+
+Technical Challenges:
+There have been many challenges while formulating, developing and implementing the ideas and models. Some of the major ones are listed below
+1. Data Preparation. We have to annotate the data before using the data for anything meaningful. The annotation were done using deep neural network mediapipe, though we considered other options like Yolo as well.
+2. Video Alignment. It is necessary to align two videos before comparing them. The video alignment is done using LAMV: Learning to Align and Match Videos with Kernelized Temporal Layers algorithm.
+
+Methodology:
+There are two different use cases of your AI-trainer.
+1. User can use the solution to help count the number of effective repetition of a given exercise.
+The solution use mediapipe for the annotations of the important thirty one points on the user's body before feeding it to the repnet for the effective repetition calculations.
+
+2. User can use reference video of an expert, to calculate the degree of similarity between the two.
+Utilizing the two video's frame and features to extract temporal match kernel features of same size, we can calculate similarity scores between the two feature maps of the video to find the best frame alignment and video similarity score.
+
+Software Tools and Hardware:
+Due to the sheer volume of the data, we have utilized HPC resources to store, process and develop the solution in conjunction with drives and local compute resources.
+All of the development is done in Python and Jupyter notebooks.
+
+Results:
+Our results include output video files from our solutions.
+One of the solution gives the true repetition count. Another use case provides the similarity score between two videos.
+
+Experience:
+It has been a steep learning curve for all of us.
+Extensive literatue review gives us a mature view of the state of the art results in pose detection algorithms.
+We have experimented with different approaches to tackle this problem.
+The implementation of the solution in a group environment helped us to contribute in a collaborative manner.
 
 ## Work Contributions
 | Team member                 | Responsibility           | Contributions  |
