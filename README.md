@@ -59,9 +59,8 @@ python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_v
 
 
   * Video Alignment Code
-    # from root directory AI-GYm_Trainer
-    Expert Video path = v1_path_expert
-    User Video path = v2_path_user
+    1) Expert Video path = v1_path_expert
+    2) User Video path = v2_path_user
     ```
     cd AI-Gym-Trainer
     python src/video_sim.py -v1 <v1_path_expert> -v2 <v2_path_user>
@@ -118,3 +117,5 @@ The implementation of the solution in a group environment helped us to contribut
 6. https://sites.google.com/view/repnet
 7. https://colab.research.google.com/github/google-research/google-research/blob/master/repnet/repnet_colab.ipynb
 8. https://github.com/WongKinYiu/yolov7
+9. https://github.com/facebookresearch/videoalignment
+10. https://research.facebook.com/publications/lamv-learning-to-align-and-match-videos-with-kernelized-temporal-layers/
