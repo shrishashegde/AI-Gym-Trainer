@@ -24,9 +24,11 @@ An assistant to help you with the gym excersises
 Shrisha Shridhar Hegde
 
 ## Execution Summary
-Clone the repositry:
+Clone the repositry and set up the environment:
 ```
 git clone https://github.com/shrishashegde/AI-Gym-Trainer.git
+conda create ai_gym_trainer
+pip install -r requirements.txt
 ```
 To run the mediapipe model:
 
