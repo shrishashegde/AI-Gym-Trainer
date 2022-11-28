@@ -104,8 +104,7 @@ The implementation of the solution in a group environment helped us to contribut
 | Team member                 | Responsibility           | Contributions  |
 | --------------------------- |:------------------------:| :--------------|
 | Shrisha Shridhar Hegde      | Dataset gathering, Critical angle extraction, mediapipe pose extraction, wrapper for extracting angles, code improvement by using OOPS, report and presentation | 1) Coding of pose, effective rep count, wrapper for extracting angles. About 30% of the entire project <br /> 2) Testing <br /> 3) PPT <br /> 4) Coordinator|
-| Suruchi Sharma              |Annotating the videos using yolov7 network , counting total number of repetitions in videos  using repnet,some part of presentation  
-|1)Computing total repetitions, yolov7 , preparing final output video,<br/> 2) PPT , 3) Executive Summary-Yolo section in report   |
+| Suruchi Sharma              |Annotating the videos using yolov7 network , counting total number of repetitions in videos  using repnet,some part of presentation|  |1)Computing total repetitions, yolov7 , preparing final output video,<br/> 2) PPT , 3) Executive Summary-Yolo section in report   |
 | Ankur                       |  |  |
 | Kishore Kumaar              |  |  |
 
