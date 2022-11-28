@@ -23,6 +23,20 @@ An assistant to help you with the gym excersises
 ## Team Coordinator
 Shrisha Shridhar Hegde
 
+## Execution Summary
+Clone the repositry:
+```
+git clone https://github.com/shrishashegde/AI-Gym-Trainer.git
+```
+To run the mediapipe model:
+
+excercise_type can be push-up, pull-up or squat. video_src_file is the file that is fed to mediapipe. video_output_file is the destination file where output is stored
+
+```
+cd AI-Gym-Trainer
+python src\main.py -t <excercise_type> -vs <video_src_file> -vo <video_output_file>
+```
+
 ## Abstract
 place holder
 
