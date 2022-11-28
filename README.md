@@ -36,6 +36,25 @@ excercise_type can be push-up, pull-up or squat. video_src_file is the file that
 cd AI-Gym-Trainer
 python src\main.py -t <excercise_type> -vs <video_src_file> -vo <video_output_file>
 ```
+## Execution Summary - Yolo
+1) Clone the repository 
+2) cd AI-Gym-Trainer
+
+```
+python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_video)> -vo <video_output_file>
+```
+   * To annotate using yolo code:
+     1) Go to the https://drive.google.com/drive/search?q=owner:shrisha.hegde%40sjsu.edu 
+         -- CMPE 258 
+            -- Yolo v7 folder 
+              --unzip yolo_v7.zip 
+     2) Install the required packages 
+     3) Execute
+        ```
+        python yolo_v7_pose.py 
+        ```
+        Edit the path of the input video and output video in the code 
+         
 
 ## Abstract
 place holder
