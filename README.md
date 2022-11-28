@@ -56,7 +56,18 @@ python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_v
         python yolo_v7_pose.py 
         ```
         Edit the path of the input video and output video in the code 
-         
+
+
+  * Video Alignment Code
+    # from root directory AI-GYm_Trainer
+    Expert Video path = v1_path_expert
+    User Video path = v2_path_user
+    ```
+    cd AI-Gym-Trainer
+    python src/video_sim.py -v1 <v1_path_expert> -v2 <v2_path_user>
+    ```     
+    Aligned Video will be stored in the root folder.
+    Similarity score will be printed on the screen.
 
 ## Abstract
 Objective:

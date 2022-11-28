@@ -78,9 +78,9 @@ if __name__ == "__main__":
 
     s11, s12, s13 = Score_((frame_features_a, timestamps_a, n_frames_a), (frame_features_b, timestamps_b, n_frames_b))
     frame_s = torch.argmax(s11[0][:10])
-    print(s11[0][:10])
-    print(frame_s)
 
+    print(f"Max Similarity Score: {s12} at frame {s13}")
+    
     cap = cv2.VideoCapture(args["video_2"])
     video_fps = cap.get(cv2.CAP_PROP_FPS)
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))

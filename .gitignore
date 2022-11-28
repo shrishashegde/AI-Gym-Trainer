@@ -131,6 +131,6 @@ dmypy.json
 # PyCharm
 .idea/
 
-VideoAlignment2/
+result_align.avi
 
 data/
