@@ -104,9 +104,9 @@ The implementation of the solution in a group environment helped us to contribut
 ## Work Contributions
 | Team member                 | Responsibility           | Contributions  |
 | --------------------------- |:------------------------:| :--------------|
-| Shrisha Shridhar Hegde      | Dataset gathering, Critical angle extraction, mediapipe pose extraction, wrapper for extracting angles, code improvement by using OOPS, report and presentation | 1) Coding of pose, effective rep count, wrapper for extracting angles. About 30% of the entire project <br /> 2) Testing <br /> 3) PPT <br /> 4) Coordinator|
-| Suruchi Sharma              |Annotating the videos using yolov7 network , counting total number of repetitions in videos  using repnet,some part of presentation|1)Computing total repetitions, yolov7 , preparing final output video,<br/> 2) PPT , 3) Executive Summary-Yolo section in report   |
-| Ankur                       |Testing repetition count implementation, Video Synchronization and similarity scores, Literature reviews, Code Testing.   | 1) Video Synchronization Implementation, Output Video, Merging <br /> 2) Testing <br /> 3) Abstract, documentation and PPT |
+| Shrisha Shridhar Hegde      | Dataset gathering, Critical angle extraction, mediapipe pose extraction, wrapper for extracting angles, code improvement by using OOPS, report and presentation | 1) Coding of pose, effective rep count, wrapper for extracting angles. About 34% of the entire project <br /> 2) Testing <br /> 3) PPT <br /> 4) Coordinator|
+| Suruchi Sharma              |Annotating the videos using yolov7 network , counting total number of repetitions in videos  using repnet,some part of presentation|1)Computing total repetitions, yolov7 , preparing final output video. About 33% of the entire project <br/> 2) PPT <br /> 3) Executive Summary-Yolo section in report |
+| Ankur                       |Testing repetition count implementation, Video Synchronization and similarity scores, Literature reviews, Code Testing.   | 1) Video Synchronization Implementation, Output Video, Merging. About 33% of the entire project <br /> 2) Testing <br /> 3) Abstract, documentation and PPT |
 
 ## References
 1. Dwibedi, Debidatta, et al. "Counting out time: Class agnostic video repetition counting in the wild." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
