@@ -20,12 +20,15 @@ An assistant to help you with the gym excersises
 Shrisha Shridhar Hegde
 
 ## Execution Summary
+
 Clone the repositry and set up the environment:
 ```
 git clone https://github.com/shrishashegde/AI-Gym-Trainer.git
 conda create ai_gym_trainer
 pip install -r requirements.txt
 ```
+
+### Media Pipe
 To run the mediapipe model:
 
 excercise_type can be push-up, pull-up or squat. video_src_file is the file that is fed to mediapipe. video_output_file is the destination file where output is stored
@@ -34,35 +37,37 @@ excercise_type can be push-up, pull-up or squat. video_src_file is the file that
 cd AI-Gym-Trainer
 python src\main.py -t <excercise_type> -vs <video_src_file> -vo <video_output_file>
 ```
-## Execution Summary - Yolo
-1) Clone the repository 
-2) cd AI-Gym-Trainer
-
-```
-python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_video)> -vo <video_output_file>
-```
-   * To annotate using yolo code:
-     1) Go to the https://drive.google.com/drive/search?q=owner:shrisha.hegde%40sjsu.edu 
+### Yolo v7
+1) To annotate using yolo code:
+     * Go to the https://drive.google.com/drive/search?q=owner:shrisha.hegde%40sjsu.edu 
          -- CMPE 258 
             -- Yolo v7 folder 
               --unzip yolo_v7.zip 
-     2) Install the required packages 
-     3) Execute
+     * Install the required packages 
+     * Execute
         ```
         python yolo_v7_pose.py 
         ```
-        Edit the path of the input video and output video in the code 
+        The ouput of the above python code is a yolo annotated video file which will be used for the next step
+ 
+2) Run the following command to produce the effective rep count of the annotated video
 
+```
+cd AI-Gym-Trainer
+python src\yolo_main.py -t <excercise_type> -vs <video_src_file(yolo_annotated_video)> -vo <video_output_file>
+```
 
-  * Video Alignment Code
-    1) Expert Video path = v1_path_expert
-    2) User Video path = v2_path_user
-    ```
-    cd AI-Gym-Trainer
-    python src/video_sim.py -v1 <v1_path_expert> -v2 <v2_path_user>
-    ```     
-    Aligned Video will be stored in the root folder.
-    Similarity score will be printed on the screen.
+3) The generated video is now passed to RepNet to generate the total number of reps attempted. Update the path to the video file in `data/repnet_.py`
+
+### Video Alignment Code
+1) Expert Video path = v1_path_expert
+2) User Video path = v2_path_user
+```
+cd AI-Gym-Trainer
+python src/video_sim.py -v1 <v1_path_expert> -v2 <v2_path_user>
+```     
+Aligned Video will be stored in the root folder.
+Similarity score will be printed on the screen.
 
 ## Abstract
 Objective:
