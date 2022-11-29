@@ -101,6 +101,15 @@ Extensive literatue review gives us a mature view of the state of the art result
 We have experimented with different approaches to tackle this problem.
 The implementation of the solution in a group environment helped us to contribute in a collaborative manner.
 
+## Results
+
+### Media pipe pose estimation rep count output
+https://user-images.githubusercontent.com/27442644/204417662-d50205b4-13fe-4a66-940f-0e9c426bae4b.mp4
+
+### Yolo v7 based pose estimation rep count output
+https://user-images.githubusercontent.com/27442644/204417631-d1d34404-0f54-4aaf-aee4-4f51867556b4.mp4
+
+
 ## Work Contributions
 | Team member                 | Responsibility           | Contributions  |
 | --------------------------- |:------------------------:| :--------------|
